@@ -1,0 +1,16 @@
+
+Cau 3:
+SELECT * FROM `dongxe` WHERE SoChoNgoi > 5
+
+Cau 4: 	 
+SELECT NCC.MaNhaCC, NCC.TenNhaCC
+FROM NHACUNGCAP NCC JOIN DANGKYCUNGCAP DK
+ON NCC.MaNhaCC = DK.MaNhaCC
+JOIN MUCPHI MP
+ON MP.MaMp = DK.MaMp
+JOIN DONGXE DX
+ON DX.DongXe = DK.DongXe
+WHERE (DX.HangXe = 'Toyota' and MP.DonGia = 15000) or (DX.HangXe = 'KIA' and MP.DonGia = 20000)
+ 
+Cau 5:
+SELECT * FROM `nhacungcap` ORDER BY TenNhaCC ASC, MaSoThue DESC

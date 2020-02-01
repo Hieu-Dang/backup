@@ -1,0 +1,14 @@
+
+Tao khoa phu: ALTER TABLE ten_bang add CONSTRAINT ten_khoa_phu FOREIGN key(ten_cot) REFERENCES ten_bang(tencot)
+
+
+
+xoa khoa chinh:  ALTER TABLE khoa drop primary key
+
+--them rang buoc not null
+ alter TABLE ten_bang MODIFY makhoa char(10) not null;
+
+ viet nhieu cau lenh:
+ 
+ sau moi cau lenh duoc ngan cach boi dau ;
+ 

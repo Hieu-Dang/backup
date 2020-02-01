@@ -1,0 +1,24 @@
+-- Tu khoa DISTINCT:
+Truy xuat cac du lieu khac nhau. (loai bo nhung du lieu trung nhau)
+-- Tu khoa: LIMIT
+gioi han so luong ket qua tra ve
+cu phap: select * from ten_bang LIMIT so_luong
+--Tu khoa: IN
+Truy xuat du lieu khi thoa man mot trong so cac gia tri
+cu phap: select * from ten_bang where ten_cot IN (giatri1, gt2, ..)
+--Tu khoa: BETWEENT
+Truy xuat du lieu trong mot khoang gia tri
+cu phap: select * from ten_bang where ten_cot between giatri1 AND gtri2)
+-- Tu khoa LIKE
+Truy xuat du lieu dua theo mot quy tac tim kiem chuoi
+cu phap: select * from ten_bang where ten_cot LIKE chuoi_muon_tim
+%: Dai dien cho khong hoac nhieu ky tu
+_ : Dai dien cho 1 ky tu
+
+--Tu khoa NOT LIKE
+-- tu khoa UPDATE
+Cap nhan du lieu trong bang
+cu phap: 
+Update ten_bang
+SET tencot1=giatri1, tencot2 = giatri2
+where ten_cot = giatri.

@@ -1,0 +1,1 @@
+#sinclude<stdio.h>

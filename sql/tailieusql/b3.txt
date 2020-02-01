@@ -1,0 +1,27 @@
+-- Truy xu?t theo di?u ki?n
+where: AND, OR
+VÍ D?: HI?N TH? THÔNG TIN GI?NG VIÊN CÓ TÊN = 'Thuy' ho?c luong >2000000
+cú pháp AND:
+Select  *
+from ten_bang
+where dieukien1 and dieukien2 and dieukien_n;
+cú pháp OR:
+cú pháp AND:
+Select  *
+from ten_bang
+where dieukien1 OR dieukien2 OR dieukien_n;
+
+--Câu l?nh Order by: s?p x?p danh sách k?t qu? theo th? t? nào dó
+cú pháp: 
+ Select * 
+ from ten_bang
+ORDER BY ten_cot ASC (ho?c DESC)
+
+---T? khóa INner join: Dùng d? l?y các thông tin t? 2 b?ng khác nhau
+cú pháp:
+select * from ten_bang1
+inner join ten_bang2
+on ten_bang1.ten_cot=ten_bang2.ten_cot
+on khoa.makhoa = giangvien.makhoa
+
+count(ten_cot)
